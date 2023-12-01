@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\Message\" />
     <Folder Include="Exceptions\" />
     <Folder Include="UserCases\V1\Commands\Order\" />
     <Folder Include="UserCases\V1\Commands\Product\" />

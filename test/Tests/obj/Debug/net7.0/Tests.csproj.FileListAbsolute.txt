@@ -138,3 +138,12 @@ D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\libman.json
 D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\BE.Contract.dll
 D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\BE.Contract.pdb
 D:\.NET\BEBase\test\Tests\obj\Debug\net7.0\Tests.sourcelink.json
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\.NET\BEBase\test\Tests\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
