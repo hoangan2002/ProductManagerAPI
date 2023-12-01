@@ -194,8 +194,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BE.Contract": "1.0.0",
           "BE.Domain": "1.0.0",
           "FluentValidation": "11.8.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.8.1",
           "MediatR": "12.2.0"
         },
         "compile": {
@@ -203,6 +205,19 @@
         },
         "runtime": {
           "bin/placeholder/BE.Application.dll": {}
+        }
+      },
+      "BE.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MediatR": "12.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BE.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.Contract.dll": {}
         }
       },
       "BE.Domain/1.0.0": {
@@ -760,6 +775,11 @@
       "type": "project",
       "path": "../BE.Application/BE.Application.csproj",
       "msbuildProject": "../BE.Application/BE.Application.csproj"
+    },
+    "BE.Contract/1.0.0": {
+      "type": "project",
+      "path": "../../BE.Contract/BE.Contract.csproj",
+      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
     },
     "BE.Domain/1.0.0": {
       "type": "project",

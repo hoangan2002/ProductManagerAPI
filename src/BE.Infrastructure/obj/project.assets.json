@@ -15,6 +15,23 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/11.8.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.8.1",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -71,8 +88,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BE.Contract": "1.0.0",
           "BE.Domain": "1.0.0",
           "FluentValidation": "11.8.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.8.1",
           "MediatR": "12.2.0"
         },
         "compile": {
@@ -80,6 +99,19 @@
         },
         "runtime": {
           "bin/placeholder/BE.Application.dll": {}
+        }
+      },
+      "BE.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MediatR": "12.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BE.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.Contract.dll": {}
         }
       },
       "BE.Domain/1.0.0": {
@@ -129,6 +161,23 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.8.1": {
+      "sha512": "Yyme2uCHnf+HawEHUEj7PguR54TPkx1HJT93/POvHT4xONvUrNfLg3Zt2NUAmIbhMjplb6TPLN8DD9AA7B/3QA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "MediatR/12.2.0": {
@@ -242,6 +291,11 @@
       "type": "project",
       "path": "../BE.Application/BE.Application.csproj",
       "msbuildProject": "../BE.Application/BE.Application.csproj"
+    },
+    "BE.Contract/1.0.0": {
+      "type": "project",
+      "path": "../../BE.Contract/BE.Contract.csproj",
+      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
     },
     "BE.Domain/1.0.0": {
       "type": "project",

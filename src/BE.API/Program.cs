@@ -1,7 +1,7 @@
 using BE.Application.Behaviors;
 using FluentValidation;
 using MediatR;
-
+using BE.Application.DependencyInjection.Extentions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,9 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //add configuration
-builder.Services.AddMediatR(option => option.RegisterServicesFromAssembly(BE.Application.AssemblyReference.Assembly));
-builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
-builder.Services.AddValidatorsFromAssembly(BE.Application.AssemblyReference.Assembly, includeInternalTypes: true);
+builder.Services.AddConfigureMediatR();
 
 var app = builder.Build();
 

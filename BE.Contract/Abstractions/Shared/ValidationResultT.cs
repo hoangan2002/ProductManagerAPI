@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE.Domain.Shared;
+namespace BE.Contract.Abstractions.Shared;
 public sealed class ValidationResult<TValue> : Result<TValue>, IValidationResult
 {
     private ValidationResult(Error[] errors)

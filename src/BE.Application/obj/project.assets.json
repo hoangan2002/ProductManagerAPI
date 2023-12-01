@@ -15,6 +15,23 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/11.8.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.8.1",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -67,6 +84,19 @@
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
       },
+      "BE.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MediatR": "12.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BE.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.Contract.dll": {}
+        }
+      },
       "BE.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -101,6 +131,23 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.8.1": {
+      "sha512": "Yyme2uCHnf+HawEHUEj7PguR54TPkx1HJT93/POvHT4xONvUrNfLg3Zt2NUAmIbhMjplb6TPLN8DD9AA7B/3QA==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "MediatR/12.2.0": {
@@ -210,6 +257,11 @@
         "tools/uninstall.ps1"
       ]
     },
+    "BE.Contract/1.0.0": {
+      "type": "project",
+      "path": "../../BE.Contract/BE.Contract.csproj",
+      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
+    },
     "BE.Domain/1.0.0": {
       "type": "project",
       "path": "../BE.Domain/BE.Domain.csproj",
@@ -218,8 +270,10 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BE.Contract >= 1.0.0",
       "BE.Domain >= 1.0.0",
       "FluentValidation >= 11.8.1",
+      "FluentValidation.DependencyInjectionExtensions >= 11.8.1",
       "MediatR >= 12.2.0",
       "SonarAnalyzer.CSharp >= 9.7.0.75501",
       "StyleCop.Analyzers >= 1.1.118"
@@ -252,6 +306,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj": {
+              "projectPath": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj"
+            },
             "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
               "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"
             }
@@ -269,6 +326,10 @@
         "targetAlias": "net7.0",
         "dependencies": {
           "FluentValidation": {
+            "target": "Package",
+            "version": "[11.8.1, )"
+          },
+          "FluentValidation.DependencyInjectionExtensions": {
             "target": "Package",
             "version": "[11.8.1, )"
           },

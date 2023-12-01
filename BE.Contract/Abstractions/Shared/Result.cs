@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE.Domain.Shared;
+namespace BE.Contract.Abstractions.Shared;
 public class Result
 {
     protected internal Result(bool isSuccess, Error error)

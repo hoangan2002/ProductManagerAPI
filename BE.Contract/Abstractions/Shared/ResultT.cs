@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE.Domain.Shared;
+namespace BE.Contract.Abstractions.Shared;
 public class Result<TValue> : Result
 {
     private readonly TValue? _value;
@@ -14,7 +14,7 @@ public class Result<TValue> : Result
         _value = value;
 
     public TValue Value => IsSuccess
-        ? _value! 
+        ? _value!
         : throw new InvalidOperationException("The value of a failure result can not be accessed.");
 
     public static implicit operator Result<TValue>(TValue? value) => Create(value);

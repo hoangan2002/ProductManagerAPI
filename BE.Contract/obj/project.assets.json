@@ -15,23 +15,6 @@
           }
         }
       },
-      "FluentValidation.DependencyInjectionExtensions/11.8.1": {
-        "type": "package",
-        "dependencies": {
-          "FluentValidation": "11.8.1",
-          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -83,73 +66,6 @@
       },
       "StyleCop.Analyzers/1.1.118": {
         "type": "package"
-      },
-      "BE.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "BE.Contract": "1.0.0",
-          "BE.Domain": "1.0.0",
-          "FluentValidation": "11.8.1",
-          "FluentValidation.DependencyInjectionExtensions": "11.8.1",
-          "MediatR": "12.2.0"
-        },
-        "compile": {
-          "bin/placeholder/BE.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BE.Application.dll": {}
-        }
-      },
-      "BE.Contract/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "MediatR": "12.2.0"
-        },
-        "compile": {
-          "bin/placeholder/BE.Contract.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BE.Contract.dll": {}
-        }
-      },
-      "BE.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/BE.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BE.Domain.dll": {}
-        }
-      },
-      "BE.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "BE.Application": "1.0.0",
-          "BE.Persistance": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BE.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BE.Infrastructure.dll": {}
-        }
-      },
-      "BE.Persistance/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "BE.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BE.Persistance.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BE.Persistance.dll": {}
-        }
       }
     }
   },
@@ -175,23 +91,6 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
-      ]
-    },
-    "FluentValidation.DependencyInjectionExtensions/11.8.1": {
-      "sha512": "Yyme2uCHnf+HawEHUEj7PguR54TPkx1HJT93/POvHT4xONvUrNfLg3Zt2NUAmIbhMjplb6TPLN8DD9AA7B/3QA==",
-      "type": "package",
-      "path": "fluentvalidation.dependencyinjectionextensions/11.8.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
-        "fluentvalidation.dependencyinjectionextensions.nuspec",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
-        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
-        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
-        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "MediatR/12.2.0": {
@@ -300,37 +199,12 @@
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
-    },
-    "BE.Application/1.0.0": {
-      "type": "project",
-      "path": "../BE.Application/BE.Application.csproj",
-      "msbuildProject": "../BE.Application/BE.Application.csproj"
-    },
-    "BE.Contract/1.0.0": {
-      "type": "project",
-      "path": "../../BE.Contract/BE.Contract.csproj",
-      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
-    },
-    "BE.Domain/1.0.0": {
-      "type": "project",
-      "path": "../BE.Domain/BE.Domain.csproj",
-      "msbuildProject": "../BE.Domain/BE.Domain.csproj"
-    },
-    "BE.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../BE.Infrastructure/BE.Infrastructure.csproj",
-      "msbuildProject": "../BE.Infrastructure/BE.Infrastructure.csproj"
-    },
-    "BE.Persistance/1.0.0": {
-      "type": "project",
-      "path": "../BE.Persistance/BE.Persistance.csproj",
-      "msbuildProject": "../BE.Persistance/BE.Persistance.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BE.Application >= 1.0.0",
-      "BE.Infrastructure >= 1.0.0",
+      "FluentValidation >= 11.8.1",
+      "MediatR >= 12.2.0",
       "SonarAnalyzer.CSharp >= 9.7.0.75501",
       "StyleCop.Analyzers >= 1.1.118"
     ]
@@ -341,11 +215,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj",
-      "projectName": "BE.Presentation",
-      "projectPath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj",
+      "projectUniqueName": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj",
+      "projectName": "BE.Contract",
+      "projectPath": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\obj\\",
+      "outputPath": "D:\\.NET\\BEBase\\BE.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -361,14 +235,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj": {
-              "projectPath": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj"
-            },
-            "D:\\.NET\\BEBase\\src\\BE.Infrastructure\\BE.Infrastructure.csproj": {
-              "projectPath": "D:\\.NET\\BEBase\\src\\BE.Infrastructure\\BE.Infrastructure.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -381,6 +248,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.8.1, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[12.2.0, )"
+          },
           "SonarAnalyzer.CSharp": {
             "suppressParent": "All",
             "target": "Package",

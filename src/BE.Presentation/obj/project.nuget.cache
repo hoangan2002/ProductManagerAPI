@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HPzVxtZKaK+QbYWcAYoHW00O62+0pg3frm7JZ1+KmJHJZKF1mE2dgwwtNk0UGBCvKgxMLDoazlU4Sm+ONrv+ew==",
+  "dgSpecHash": "YgtHJUtjpwfZPp2zfBPPMtyfg6nzbcmTeV1Nu43TLi1qWbvhNXhI3ToblJW0eUZRc90sf7cAd8R3Trr7/WGRJw==",
   "success": true,
   "projectFilePath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.1\\fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
