@@ -46,3 +46,7 @@ D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\MediatR.Contracts.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\FluentValidation.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\.NET\BEBase\src\BE.API\obj\Debug\net7.0\BE.API.sourcelink.json
+D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\libman.json
+D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Contract.pdb

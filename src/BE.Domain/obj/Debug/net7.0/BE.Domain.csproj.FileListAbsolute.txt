@@ -9,3 +9,4 @@ D:\.NET\BEBase\src\BE.Domain\obj\Debug\net7.0\BE.Domain.dll
 D:\.NET\BEBase\src\BE.Domain\obj\Debug\net7.0\refint\BE.Domain.dll
 D:\.NET\BEBase\src\BE.Domain\obj\Debug\net7.0\BE.Domain.pdb
 D:\.NET\BEBase\src\BE.Domain\obj\Debug\net7.0\ref\BE.Domain.dll
+D:\.NET\BEBase\src\BE.Domain\obj\Debug\net7.0\BE.Domain.sourcelink.json

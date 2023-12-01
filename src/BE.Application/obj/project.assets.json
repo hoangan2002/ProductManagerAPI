@@ -88,6 +88,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "FluentValidation": "11.8.1",
           "MediatR": "12.2.0"
         },
         "compile": {
@@ -259,8 +260,8 @@
     },
     "BE.Contract/1.0.0": {
       "type": "project",
-      "path": "../../BE.Contract/BE.Contract.csproj",
-      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
+      "path": "../BE.Contract/BE.Contract.csproj",
+      "msbuildProject": "../BE.Contract/BE.Contract.csproj"
     },
     "BE.Domain/1.0.0": {
       "type": "project",
@@ -306,8 +307,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj": {
-              "projectPath": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj"
+            "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj": {
+              "projectPath": "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj"
             },
             "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
               "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"

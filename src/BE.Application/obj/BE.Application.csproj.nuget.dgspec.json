@@ -4,14 +4,14 @@
     "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj": {}
   },
   "projects": {
-    "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj": {
+    "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj",
-        "projectName": "BE.Contract",
-        "projectPath": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj",
+        "projectUniqueName": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj",
+        "projectName": "BE.Application",
+        "projectPath": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\BEBase\\BE.Contract\\obj\\",
+        "outputPath": "D:\\.NET\\BEBase\\src\\BE.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj": {
+                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj"
+              },
+              "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
+                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +47,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
@@ -75,14 +90,14 @@
         }
       }
     },
-    "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj": {
+    "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj",
-        "projectName": "BE.Application",
-        "projectPath": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj",
+        "projectUniqueName": "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj",
+        "projectName": "BE.Contract",
+        "projectPath": "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\BEBase\\src\\BE.Application\\obj\\",
+        "outputPath": "D:\\.NET\\BEBase\\src\\BE.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,14 +113,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\BE.Contract\\BE.Contract.csproj"
-              },
-              "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -119,10 +127,6 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "FluentValidation": {
-              "target": "Package",
-              "version": "[11.8.1, )"
-            },
-            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.8.1, )"
             },

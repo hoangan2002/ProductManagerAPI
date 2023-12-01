@@ -1,0 +1,13 @@
+D:\.NET\BEBase\src\BE.Contract\bin\Debug\net7.0\BE.Contract.deps.json
+D:\.NET\BEBase\src\BE.Contract\bin\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Contract\bin\Debug\net7.0\BE.Contract.pdb
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.csproj.AssemblyReference.cache
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.AssemblyInfoInputs.cache
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.AssemblyInfo.cs
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.csproj.CoreCompileInputs.cache
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.sourcelink.json
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\refint\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\BE.Contract.pdb
+D:\.NET\BEBase\src\BE.Contract\obj\Debug\net7.0\ref\BE.Contract.dll

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yMomDWy06wER2Ak9DWVevqXiWdxmjHo/u2REVb2pCZdzm+CbP5ujxQWOZQUFBrA/uBzNGrWgcA/nL1OfBvk0hQ==",
+  "success": true,
+  "projectFilePath": "D:\\.NET\\BEBase\\src\\BE.Contract\\BE.Contract.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sonaranalyzer.csharp\\9.7.0.75501\\sonaranalyzer.csharp.9.7.0.75501.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

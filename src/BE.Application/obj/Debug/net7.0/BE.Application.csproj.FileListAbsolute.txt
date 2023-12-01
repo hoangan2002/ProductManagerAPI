@@ -13,3 +13,6 @@ D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Domain.dll
 D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Domain.pdb
 D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.csproj.AssemblyReference.cache
 D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.csproj.CopyComplete
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.sourcelink.json
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Contract.pdb

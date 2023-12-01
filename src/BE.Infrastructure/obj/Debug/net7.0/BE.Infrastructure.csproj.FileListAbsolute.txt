@@ -17,3 +17,6 @@ D:\.NET\BEBase\src\BE.Infrastructure\bin\Debug\net7.0\BE.Persistance.pdb
 D:\.NET\BEBase\src\BE.Infrastructure\bin\Debug\net7.0\BE.Domain.pdb
 D:\.NET\BEBase\src\BE.Infrastructure\obj\Debug\net7.0\BE.Infrastructure.csproj.AssemblyReference.cache
 D:\.NET\BEBase\src\BE.Infrastructure\obj\Debug\net7.0\BE.Infrastructure.csproj.CopyComplete
+D:\.NET\BEBase\src\BE.Infrastructure\obj\Debug\net7.0\BE.Infrastructure.sourcelink.json
+D:\.NET\BEBase\src\BE.Infrastructure\bin\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Infrastructure\bin\Debug\net7.0\BE.Contract.pdb

@@ -19,3 +19,6 @@ D:\.NET\BEBase\src\BE.Presentation\obj\Debug\net7.0\BE.Presentation.dll
 D:\.NET\BEBase\src\BE.Presentation\obj\Debug\net7.0\refint\BE.Presentation.dll
 D:\.NET\BEBase\src\BE.Presentation\obj\Debug\net7.0\BE.Presentation.pdb
 D:\.NET\BEBase\src\BE.Presentation\obj\Debug\net7.0\ref\BE.Presentation.dll
+D:\.NET\BEBase\src\BE.Presentation\obj\Debug\net7.0\BE.Presentation.sourcelink.json
+D:\.NET\BEBase\src\BE.Presentation\bin\Debug\net7.0\BE.Contract.dll
+D:\.NET\BEBase\src\BE.Presentation\bin\Debug\net7.0\BE.Contract.pdb

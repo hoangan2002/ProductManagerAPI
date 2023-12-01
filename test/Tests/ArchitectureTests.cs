@@ -1,7 +1,7 @@
 using NetArchTest.Rules;
 using FluentAssertions;
 using static System.Net.Mime.MediaTypeNames;
-using BE.Application.Abstractions.Message;
+using BE.Contract.Abstractions.Message;
 namespace Tests;
 
 public class ArchitectureTests

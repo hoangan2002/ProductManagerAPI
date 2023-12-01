@@ -105,6 +105,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "FluentValidation": "11.8.1",
           "MediatR": "12.2.0"
         },
         "compile": {
@@ -294,8 +295,8 @@
     },
     "BE.Contract/1.0.0": {
       "type": "project",
-      "path": "../../BE.Contract/BE.Contract.csproj",
-      "msbuildProject": "../../BE.Contract/BE.Contract.csproj"
+      "path": "../BE.Contract/BE.Contract.csproj",
+      "msbuildProject": "../BE.Contract/BE.Contract.csproj"
     },
     "BE.Domain/1.0.0": {
       "type": "project",

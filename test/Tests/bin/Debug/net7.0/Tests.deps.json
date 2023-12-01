@@ -1210,9 +1210,11 @@
       "BE.API/1.0.0": {
         "dependencies": {
           "BE.Application": "1.0.0",
+          "BE.Contract": "1.0.0",
           "BE.Infrastructure": "1.0.0",
           "BE.Persistance": "1.0.0",
           "BE.Presentation": "1.0.0",
+          "FluentValidation": "11.8.1",
           "FluentValidation.DependencyInjectionExtensions": "11.8.1",
           "MediatR": "12.2.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.13",
@@ -1224,12 +1226,23 @@
       },
       "BE.Application/1.0.0": {
         "dependencies": {
+          "BE.Contract": "1.0.0",
           "BE.Domain": "1.0.0",
           "FluentValidation": "11.8.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.8.1",
           "MediatR": "12.2.0"
         },
         "runtime": {
           "BE.Application.dll": {}
+        }
+      },
+      "BE.Contract/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.8.1",
+          "MediatR": "12.2.0"
+        },
+        "runtime": {
+          "BE.Contract.dll": {}
         }
       },
       "BE.Domain/1.0.0": {
@@ -2033,6 +2046,11 @@
       "sha512": ""
     },
     "BE.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BE.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
