@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\.NET\BEBase\src\BE.API\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-11-28T19:42:46.7309074Z;True|2023-11-29T02:42:22.0328213+07:00;True|2023-11-29T02:07:09.2527368+07:00;True|2023-11-29T02:05:14.1425978+07:00;True|2023-11-29T01:57:55.2770316+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

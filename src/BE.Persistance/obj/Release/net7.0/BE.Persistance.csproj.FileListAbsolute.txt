@@ -1,0 +1,15 @@
+D:\.NET\BEBase\src\BE.Persistance\bin\Release\net7.0\BE.Persistance.deps.json
+D:\.NET\BEBase\src\BE.Persistance\bin\Release\net7.0\BE.Persistance.dll
+D:\.NET\BEBase\src\BE.Persistance\bin\Release\net7.0\BE.Persistance.pdb
+D:\.NET\BEBase\src\BE.Persistance\bin\Release\net7.0\BE.Domain.dll
+D:\.NET\BEBase\src\BE.Persistance\bin\Release\net7.0\BE.Domain.pdb
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.csproj.AssemblyReference.cache
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.AssemblyInfoInputs.cache
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.AssemblyInfo.cs
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.csproj.CoreCompileInputs.cache
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.csproj.CopyComplete
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.dll
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\refint\BE.Persistance.dll
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\BE.Persistance.pdb
+D:\.NET\BEBase\src\BE.Persistance\obj\Release\net7.0\ref\BE.Persistance.dll

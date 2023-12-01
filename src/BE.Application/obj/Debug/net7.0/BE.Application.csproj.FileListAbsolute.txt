@@ -1,0 +1,15 @@
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Application.deps.json
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Application.dll
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Application.pdb
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.AssemblyInfoInputs.cache
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.AssemblyInfo.cs
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.csproj.CoreCompileInputs.cache
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.dll
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\refint\BE.Application.dll
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.pdb
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\ref\BE.Application.dll
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Domain.dll
+D:\.NET\BEBase\src\BE.Application\bin\Debug\net7.0\BE.Domain.pdb
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.csproj.AssemblyReference.cache
+D:\.NET\BEBase\src\BE.Application\obj\Debug\net7.0\BE.Application.csproj.CopyComplete

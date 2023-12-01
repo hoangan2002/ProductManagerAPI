@@ -1,0 +1,43 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BE.Domain/1.0.0": {
+        "dependencies": {
+          "SonarAnalyzer.CSharp": "9.7.0.75501",
+          "StyleCop.Analyzers": "1.1.118"
+        },
+        "runtime": {
+          "BE.Domain.dll": {}
+        }
+      },
+      "SonarAnalyzer.CSharp/9.7.0.75501": {},
+      "StyleCop.Analyzers/1.1.118": {}
+    }
+  },
+  "libraries": {
+    "BE.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SonarAnalyzer.CSharp/9.7.0.75501": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sj3c1W6uwi16iDNSeLi+/taVsBrueYMrtHXSyhlct7fSBRHmHZa1GgkEk55IwGsQhJC48fotcE6gSaWNean8gw==",
+      "path": "sonaranalyzer.csharp/9.7.0.75501",
+      "hashPath": "sonaranalyzer.csharp.9.7.0.75501.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LoCxIlZE5XE1NJiV3bp9Bs+KtTEvlqbEsw5cKEUVUvEPkNaEqhCt+3/11hhcbS31rAOPmnIjYB1K7ZrY0nk9Eg==",
+  "success": true,
+  "projectFilePath": "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\sonaranalyzer.csharp\\9.7.0.75501\\sonaranalyzer.csharp.9.7.0.75501.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
