@@ -4,8 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using BE.Domain.Entities.Identity;
-using BE.Persistance;
-namespace BE.Persistence.DependencyInjection.Extensions;
+namespace BE.Persistance.DependencyInjection.Extensions;
 
 public static class ServiceCollectionExtensions
 {

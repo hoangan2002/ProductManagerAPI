@@ -1,5 +1,6 @@
 using BE.Application.DependencyInjection.Extentions;
-using BE.Persistance.DependencyInjection;
+using BE.Persistence.DependencyInjection.Extensions.ServiceCollectionExtensions;
+using BE.Persistance.DependencyInjection.
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
