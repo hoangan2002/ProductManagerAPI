@@ -1,7 +1,5 @@
-using BE.Application.Behaviors;
-using FluentValidation;
-using MediatR;
 using BE.Application.DependencyInjection.Extentions;
+using BE.Persistance.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //add configuration
 builder.Services.AddConfigureMediatR();
-
+//builder.Services.ConfigureSqlServerRetryOptions();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
