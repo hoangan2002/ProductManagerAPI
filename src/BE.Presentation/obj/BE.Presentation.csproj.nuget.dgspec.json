@@ -452,6 +452,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "SonarAnalyzer.CSharp": {
               "suppressParent": "All",
               "target": "Package",

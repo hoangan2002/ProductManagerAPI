@@ -4,6 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using BE.Domain.Entities.Identity;
+using BE.Domain.Abstractions;
+using BE.Domain.Abstractions.Repositories;
+using BE.Persistance.Repositories;
 namespace BE.Persistance.DependencyInjection.Extensions;
 
 public static class ServiceCollectionExtensions
@@ -68,12 +71,12 @@ public static class ServiceCollectionExtensions
         });
     }
 
-  //  public static void AddRepositoryBaseConfiguration(this IServiceCollection services)
-   // {
-     //   services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
-       // services.AddTransient(typeof(IRepositoryBase<,>), typeof(RepositoryBase<,>));
+    public static void AddRepositoryBaseConfiguration(this IServiceCollection services)
+    {
+        services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+        services.AddTransient(typeof(IRepositoryBase<,>), typeof(RepositoryBase<,>));
 
-    //}
+    }
 
     public static OptionsBuilder<BE.Persistance.DependencyInjection.Options.SqlServerRetryOptions> ConfigureSqlServerRetryOptions(this IServiceCollection services, IConfigurationSection section)
         => services

@@ -1,6 +1,7 @@
 using BE.Application.DependencyInjection.Extentions;
-using BE.Persistence.DependencyInjection.Extensions.ServiceCollectionExtensions;
-using BE.Persistance.DependencyInjection.
+using BE.Persistance.DependencyInjection.Extensions;
+using BE.Persistance.DependencyInjection.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,7 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //add configuration
 builder.Services.AddConfigureMediatR();
-//builder.Services.ConfigureSqlServerRetryOptions();
+builder.Services.ConfigureSqlServerRetryOptions(builder.Configuration.GetSection(nameof(SqlServerRetryOptions)));
+builder.Services.AddSqlConfiguration();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
