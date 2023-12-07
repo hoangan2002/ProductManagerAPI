@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace BE.Contract.Services.Product.Validators;
-public class CreateProductValidator : AbstractValidator<Command.CreateProduct>
+public class CreateProductValidator : AbstractValidator<Command.CreateProductCommand>
 {
     public CreateProductValidator() {
         RuleFor(x => x.Name).NotEmpty();

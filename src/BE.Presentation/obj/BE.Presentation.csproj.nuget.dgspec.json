@@ -33,6 +33,9 @@
               },
               "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
                 "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"
+              },
+              "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj": {
+                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj"
               }
             }
           }
@@ -47,6 +50,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.8.1, )"
@@ -126,6 +137,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Ardalis.SmartEnum": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.8.1, )"
@@ -133,6 +148,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
             },
             "SonarAnalyzer.CSharp": {
               "suppressParent": "All",
@@ -452,6 +471,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"

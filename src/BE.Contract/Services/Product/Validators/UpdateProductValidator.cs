@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace BE.Contract.Services.Product.Validators;
-public class UpdateProductValidator : AbstractValidator<Command.UpdateProduct>
+public class UpdateProductValidator : AbstractValidator<Command.UpdateProductCommand>
 {
     public UpdateProductValidator()
     {

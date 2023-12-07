@@ -1,19 +1,32 @@
 using BE.Application.DependencyInjection.Extentions;
 using BE.Persistance.DependencyInjection.Extensions;
 using BE.Persistance.DependencyInjection.Options;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// Add Log.
+Log.Logger = new LoggerConfiguration().ReadFrom
+    .Configuration(builder.Configuration)
+    .CreateLogger();
+builder.Logging
+    .ClearProviders()
+    .AddSerilog();
+
+builder.Host.UseSerilog();
 //add configuration
 builder.Services.AddConfigureMediatR();
 builder.Services.ConfigureSqlServerRetryOptions(builder.Configuration.GetSection(nameof(SqlServerRetryOptions)));
 builder.Services.AddSqlConfiguration();
+builder.Services.AddRepositoryBaseConfiguration();
+builder.Services.AddConfigureAutoMapper();
+// Api
+builder.Services
+    .AddControllers()
+    .AddApplicationPart(BE.Presentation.AssemblyReference.Assembly);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
