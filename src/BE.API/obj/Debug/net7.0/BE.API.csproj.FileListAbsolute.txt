@@ -47,7 +47,6 @@ D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInject
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\FluentValidation.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\.NET\BEBase\src\BE.API\obj\Debug\net7.0\BE.API.sourcelink.json
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\libman.json
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Contract.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Contract.pdb
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -119,3 +118,5 @@ D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Serilog.Sinks.Console.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\MicroElements.OpenApi.FluentValidation.dll
+D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\MicroElements.Swashbuckle.FluentValidation.dll

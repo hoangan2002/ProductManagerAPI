@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BE.Contract.Abstractions.Shared;
+﻿using BE.Contract.Abstractions.Shared;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BE.Presentation.Abstractions;
 [ApiController]
-//[Route("api/v{version:apiVersion}/[controller]")]
 [Route("api/[controller]")]
 public abstract class ApiController : ControllerBase
 {

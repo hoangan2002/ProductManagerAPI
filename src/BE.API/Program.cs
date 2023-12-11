@@ -2,14 +2,8 @@ using BE.API.Middleware;
 using BE.Application.DependencyInjection.Extentions;
 using BE.Persistance.DependencyInjection.Extensions;
 using BE.Persistance.DependencyInjection.Options;
-using Microsoft.AspNetCore.Builder;
 using Serilog;
-
-
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddSwaggerGen();
-
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 // Add Log.
@@ -31,7 +25,7 @@ builder.Services.AddConfigureAutoMapper();
 builder.Services
     .AddControllers()
     .AddApplicationPart(BE.Presentation.AssemblyReference.Assembly);
-
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

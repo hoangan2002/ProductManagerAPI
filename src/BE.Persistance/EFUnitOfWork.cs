@@ -13,7 +13,7 @@ public class EFUnitOfWork : IUnitOfWork
     public EFUnitOfWork(ApplicationDbContext context)
         => _context = context;
 
-    public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
+    public async Task SaveChangesAsync()
         => await _context.SaveChangesAsync();
 
     async ValueTask IAsyncDisposable.DisposeAsync()

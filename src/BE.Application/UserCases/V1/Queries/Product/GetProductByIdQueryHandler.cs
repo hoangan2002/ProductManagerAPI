@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using BE.Contract.Abstractions.Message;
 using BE.Contract.Abstractions.Shared;
 using BE.Contract.Services.Product;
@@ -26,7 +21,6 @@ public sealed class GetProductByIdQueryHandler : IQueryHandler<Query.GetProductB
     {
         var product = await _productRepository.FindByIdAsync(request.Id)
             ?? throw new ProductException.ProductNotFoundException(request.Id);
-
         var result = _mapper.Map<Response.ProductResponse>(product);
 
         return Result.Success(result);

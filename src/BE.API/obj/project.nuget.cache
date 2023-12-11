@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AtJeNXBjZlQbjiwtT/uLXByl0/4zt5G/oRSPe9RnPp4YmyGeHKAfuXeuM0ICcuXRGWZcv3wCTgmX5K4BmwbzBA==",
+  "dgSpecHash": "42LJ/akyw8aDtmWwvfxjI/jwR42NeHBTd2RErBNEQM58ItYjh0DSE/mLVKNc2PhDiljh8F2i++kAStE9dTgFjg==",
   "success": true,
   "projectFilePath": "D:\\.NET\\BEBase\\src\\BE.API\\BE.API.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,8 @@
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microelements.openapi.fluentvalidation\\6.0.0\\microelements.openapi.fluentvalidation.6.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microelements.swashbuckle.fluentvalidation\\6.0.0\\microelements.swashbuckle.fluentvalidation.6.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

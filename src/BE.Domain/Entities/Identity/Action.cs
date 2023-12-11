@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BE.Domain.Entities.Identity;
+﻿namespace BE.Domain.Entities.Identity;
 public class Action
 {
     public string Id { get; set; }

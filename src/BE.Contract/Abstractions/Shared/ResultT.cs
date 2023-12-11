@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BE.Contract.Abstractions.Shared;
+﻿namespace BE.Contract.Abstractions.Shared;
 public class Result<TValue> : Result
 {
     private readonly TValue? _value;

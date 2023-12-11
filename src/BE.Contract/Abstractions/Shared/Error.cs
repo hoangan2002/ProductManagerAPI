@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BE.Contract.Abstractions.Shared;
+﻿namespace BE.Contract.Abstractions.Shared;
 public class Error : IEquatable<Error>
 {
     public static readonly Error None = new(string.Empty, string.Empty);

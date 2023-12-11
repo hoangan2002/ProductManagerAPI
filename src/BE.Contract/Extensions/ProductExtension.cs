@@ -1,6 +1,4 @@
 ﻿namespace BE.Contract.Extensions;
-
-
 public static class ProductExtension
 {
     public static string GetSortProductProperty(string sortColumn)

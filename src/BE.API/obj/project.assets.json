@@ -244,6 +244,43 @@
           }
         }
       },
+      "MicroElements.OpenApi.FluentValidation/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "[10.0.0, 12.0.0)",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MicroElements.OpenApi.FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MicroElements.OpenApi.FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MicroElements.Swashbuckle.FluentValidation/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "[10.0.0, 12.0.0)",
+          "MicroElements.OpenApi.FluentValidation": "6.0.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "[6.3.0, 7.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/MicroElements.Swashbuckle.FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MicroElements.Swashbuckle.FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2754,6 +2791,32 @@
         "lib/netstandard2.0/MediatR.Contracts.xml",
         "mediatr.contracts.2.0.1.nupkg.sha512",
         "mediatr.contracts.nuspec"
+      ]
+    },
+    "MicroElements.OpenApi.FluentValidation/6.0.0": {
+      "sha512": "6XD28ux6GP7C+rspfKhV7aG4ZMeA138uXszbk+EnzXHMv2Gj3fxsU/gKvHlyixT+GBAErbzZO4bbjMi3XXo/Ww==",
+      "type": "package",
+      "path": "microelements.openapi.fluentvalidation/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MicroElements.OpenApi.FluentValidation.dll",
+        "lib/netstandard2.0/MicroElements.OpenApi.FluentValidation.xml",
+        "microelements.openapi.fluentvalidation.6.0.0.nupkg.sha512",
+        "microelements.openapi.fluentvalidation.nuspec"
+      ]
+    },
+    "MicroElements.Swashbuckle.FluentValidation/6.0.0": {
+      "sha512": "uCQMS4ww1yjf6KThudk6ncErudMPqxHMeK8oIYSfGxhumedm7uu0fUjtvA+TnBeZ/HXvmcR7rrc5sI487U9oBA==",
+      "type": "package",
+      "path": "microelements.swashbuckle.fluentvalidation/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MicroElements.Swashbuckle.FluentValidation.dll",
+        "lib/netstandard2.0/MicroElements.Swashbuckle.FluentValidation.xml",
+        "microelements.swashbuckle.fluentvalidation.6.0.0.nupkg.sha512",
+        "microelements.swashbuckle.fluentvalidation.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -6092,12 +6155,15 @@
       "FluentValidation >= 11.8.1",
       "FluentValidation.DependencyInjectionExtensions >= 11.8.1",
       "MediatR >= 12.2.0",
+      "MicroElements.Swashbuckle.FluentValidation >= 6.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.14",
+      "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Serilog.AspNetCore >= 7.0.0",
       "SonarAnalyzer.CSharp >= 9.7.0.75501",
       "StyleCop.Analyzers >= 1.1.118",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "Swashbuckle.AspNetCore.SwaggerGen >= 6.5.0"
     ]
   },
   "packageFolders": {
@@ -6167,6 +6233,10 @@
             "target": "Package",
             "version": "[12.2.0, )"
           },
+          "MicroElements.Swashbuckle.FluentValidation": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.13, )"
@@ -6176,6 +6246,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.14, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",
@@ -6192,6 +6266,10 @@
             "version": "[1.1.118, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerGen": {
             "target": "Package",
             "version": "[6.5.0, )"
           }

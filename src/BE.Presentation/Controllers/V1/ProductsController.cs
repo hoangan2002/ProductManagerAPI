@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Asp.Versioning;
-using BE.Contract.Abstractions.Shared;
+﻿using BE.Contract.Abstractions.Shared;
 using BE.Contract.Extensions;
 using BE.Contract.Services.Product;
 using BE.Presentation.Abstractions;
@@ -13,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BE.Presentation.Controllers.V1;
-//[ApiVersion(1)]
+
 public class ProductsController : ApiController
 {
     public ProductsController(ISender sender) : base(sender)

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BE.Contract.Abstractions.Message;
+﻿using BE.Contract.Abstractions.Message;
 using BE.Contract.Abstractions.Shared;
 using BE.Domain.Abstractions.Repositories;
 using BE.Domain.Abstractions;
@@ -35,27 +30,8 @@ public sealed class CreateProductCommandHandler : ICommandHandler<Command.Create
         var product = Domain.Entities.Product.CreateProduct(Guid.NewGuid(), request.Name, request.Price, request.Description);
 
         _productRepository.Add(product);
-        //await _unitOfWork.SaveChangesAsync(cancellationToken);
-        await _context.SaveChangesAsync();
 
-        // Try to get product ID
-        /*  var productCreated = await _productRepository.FindByIdAsync(product.Id);
-
-          var productSecond = Domain.Entities.Product.CreateProduct(Guid.NewGuid(), productCreated.Name + " Second",
-              productCreated.Price,
-              productCreated.Id.ToString());
-
-          _productRepository.Add(productSecond);
-          //await _unitOfWork.SaveChangesAsync(cancellationToken);
-          await _context.SaveChangesAsync();
-        */
-        // => Send Email
-        //await _publisher.Publish(new DomainEvent.ProductCreated(productCreated.Id), cancellationToken);
-        //await _publisher.Publish(new DomainEvent.ProductDeleted(product.Id), cancellationToken);
-
-        // await Task.WhenAll(
-        //          _publisher.Publish(new DomainEvent.ProductCreated(productCreated.Id), cancellationToken),
-        //          _publisher.Publish(new DomainEvent.ProductDeleted(product.Id), cancellationToken));
+        _unitOfWork.SaveChangesAsync();
 
         return Result.Success();
     }
