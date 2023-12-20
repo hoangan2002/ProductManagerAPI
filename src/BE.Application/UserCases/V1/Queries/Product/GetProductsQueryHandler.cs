@@ -4,8 +4,9 @@ using BE.Contract.Abstractions.Message;
 using BE.Contract.Abstractions.Shared;
 using BE.Contract.Enumerations;
 using BE.Contract.Services.Product;
+using BE.Domain.Abstractions;
 using BE.Domain.Abstractions.Repositories;
-using BE.Persistance;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace BE.Application.UserCases.V1.Queries.Product;
@@ -13,15 +14,11 @@ public sealed class GetProductsQueryHandler : IQueryHandler<Query.GetProductsQue
 {
     private readonly IRepositoryBase<Domain.Entities.Product, Guid> _productRepository;
     private readonly IMapper _mapper;
-    private readonly ApplicationDbContext _context;
-
     public GetProductsQueryHandler(IRepositoryBase<Domain.Entities.Product, Guid> productRepository,
-        ApplicationDbContext context,
-        IMapper mapper)
+    IMapper mapper)
     {
         _productRepository = productRepository;
         _mapper = mapper;
-        _context = context;
     }
 
     public async Task<Result<PagedResult<Response.ProductResponse>>> Handle(Query.GetProductsQuery request, CancellationToken cancellationToken)
@@ -51,10 +48,10 @@ public sealed class GetProductsQueryHandler : IQueryHandler<Query.GetProductsQue
 
             productsQuery += $" OFFSET {(PageIndex - 1) * PageSize} ROWS FETCH NEXT {PageSize} ROWS ONLY";
 
-            var products = await _context.Products.FromSqlRaw(productsQuery)
+            var products = await _productRepository.FromSqlRaw(productsQuery)
                 .ToListAsync(cancellationToken: cancellationToken);
 
-            var totalCount = await _context.Products.CountAsync(cancellationToken);
+            var totalCount = await _productRepository.CountAsync();
 
             var productPagedResult = PagedResult<Domain.Entities.Product>.Create(products,
                 PageIndex,

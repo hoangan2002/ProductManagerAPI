@@ -47,5 +47,10 @@ public class RepositoryBase<TEntity, TKey> : IRepositoryBase<TEntity, TKey>, IDi
 
     public void Update(TEntity entity)
         => _context.Set<TEntity>().Update(entity);
+
+    public IQueryable<TEntity> FromSqlRaw(string sql)
+        => _context.Set<TEntity>().FromSqlRaw(sql);
+    public async Task<int> CountAsync()
+        => await _context.Set<TEntity>().CountAsync();
 }
 

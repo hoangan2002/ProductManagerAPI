@@ -15,4 +15,6 @@ public interface IRepositoryBase<TEntity, in TKey> where TEntity : class
     void Remove(TEntity entity);
 
     void RemoveMultiple(List<TEntity> entities);
+    IQueryable<TEntity> FromSqlRaw(string sql);
+    Task<int> CountAsync();
 }

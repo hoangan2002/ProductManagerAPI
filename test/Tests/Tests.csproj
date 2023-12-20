@@ -30,7 +30,6 @@
     <ProjectReference Include="..\..\src\BE.Domain\BE.Domain.csproj" />
     <ProjectReference Include="..\..\src\BE.Infrastructure\BE.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\BE.Persistance\BE.Persistance.csproj" />
-    <ProjectReference Include="..\..\src\BE.Presentation\BE.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,11 @@
-﻿using BE.Contract.Abstractions.Shared;
+﻿using BE.API.Abstractions;
+using BE.Contract.Abstractions.Shared;
 using BE.Contract.Extensions;
 using BE.Contract.Services.Product;
-using BE.Presentation.Abstractions;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BE.Presentation.Controllers.V1;
+namespace BE.Presentation.API.V1;
 
 public class ProductsController : ApiController
 {

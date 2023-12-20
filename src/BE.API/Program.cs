@@ -15,16 +15,14 @@ builder.Logging
     .AddSerilog();
 
 builder.Host.UseSerilog();
-//add configuration
+// Add configuration
 builder.Services.AddConfigureMediatR();
 builder.Services.ConfigureSqlServerRetryOptions(builder.Configuration.GetSection(nameof(SqlServerRetryOptions)));
 builder.Services.AddSqlConfiguration();
 builder.Services.AddRepositoryBaseConfiguration();
 builder.Services.AddConfigureAutoMapper();
 // Api
-builder.Services
-    .AddControllers()
-    .AddApplicationPart(BE.Presentation.AssemblyReference.Assembly);
+builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
@@ -36,8 +34,8 @@ var app = builder.Build();
 
 }
 app.UseMiddleware<ExceptionHandlingMiddleware>();
-app.UseHttpsRedirection();
 
+app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();

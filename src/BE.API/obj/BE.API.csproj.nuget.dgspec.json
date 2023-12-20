@@ -39,9 +39,6 @@
               },
               "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj": {
                 "projectPath": "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj"
-              },
-              "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj"
               }
             }
           }
@@ -161,9 +158,6 @@
               },
               "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj": {
                 "projectPath": "D:\\.NET\\BEBase\\src\\BE.Domain\\BE.Domain.csproj"
-              },
-              "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Persistance\\BE.Persistance.csproj"
               }
             }
           }
@@ -524,88 +518,6 @@
             "Microsoft.Extensions.Options.DataAnnotations": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "SonarAnalyzer.CSharp": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.7.0.75501, )"
-            },
-            "StyleCop.Analyzers": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.1.118, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj",
-        "projectName": "BE.Presentation",
-        "projectPath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\BE.Presentation.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\BEBase\\src\\BE.Presentation\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Application\\BE.Application.csproj"
-              },
-              "D:\\.NET\\BEBase\\src\\BE.Infrastructure\\BE.Infrastructure.csproj": {
-                "projectPath": "D:\\.NET\\BEBase\\src\\BE.Infrastructure\\BE.Infrastructure.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Asp.Versioning.Mvc.ApiExplorer": {
-              "target": "Package",
-              "version": "[7.1.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.2.5, )"
             },
             "SonarAnalyzer.CSharp": {
               "suppressParent": "All",

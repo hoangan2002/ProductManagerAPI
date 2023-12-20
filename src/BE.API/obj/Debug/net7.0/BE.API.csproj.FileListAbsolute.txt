@@ -35,11 +35,9 @@ D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Application.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Domain.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Infrastructure.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Persistance.dll
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Presentation.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Application.pdb
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Infrastructure.pdb
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Persistance.pdb
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Presentation.pdb
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\BE.Domain.pdb
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\MediatR.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\MediatR.Contracts.dll
@@ -103,10 +101,6 @@ D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\System.CodeDom.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Ardalis.SmartEnum.dll
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Asp.Versioning.Abstractions.dll
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Asp.Versioning.Http.dll
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Asp.Versioning.Mvc.dll
-D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Asp.Versioning.Mvc.ApiExplorer.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\AutoMapper.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\.NET\BEBase\src\BE.API\bin\Debug\net7.0\Serilog.dll

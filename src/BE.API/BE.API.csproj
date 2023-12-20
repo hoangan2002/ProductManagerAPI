@@ -27,7 +27,6 @@
     <ProjectReference Include="..\BE.Contract\BE.Contract.csproj" />
     <ProjectReference Include="..\BE.Infrastructure\BE.Infrastructure.csproj" />
     <ProjectReference Include="..\BE.Persistance\BE.Persistance.csproj" />
-    <ProjectReference Include="..\BE.Presentation\BE.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

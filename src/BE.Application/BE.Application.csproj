@@ -9,11 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BE.Contract\BE.Contract.csproj" />
     <ProjectReference Include="..\BE.Domain\BE.Domain.csproj" />
-    <ProjectReference Include="..\BE.Persistance\BE.Persistance.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="UserCases\V2\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +17,10 @@
     <PackageReference Include="FluentValidation" Version="11.8.1" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
   </ItemGroup>
 
 </Project>

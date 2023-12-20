@@ -2,7 +2,6 @@
 using BE.Contract.Abstractions.Shared;
 using BE.Domain.Abstractions.Repositories;
 using BE.Domain.Abstractions;
-using BE.Persistance;
 using MediatR;
 using BE.Contract.Services.Product;
 
@@ -11,17 +10,15 @@ public sealed class CreateProductCommandHandler : ICommandHandler<Command.Create
 {
     private readonly IRepositoryBase<Domain.Entities.Product, Guid> _productRepository;
     private readonly IUnitOfWork _unitOfWork; // SQL-SERVER-STRATEGY-2
-    private readonly ApplicationDbContext _context; // SQL-SERVER-STRATEGY-1
     private readonly IPublisher _publisher;
 
     public CreateProductCommandHandler(IRepositoryBase<Domain.Entities.Product, Guid> productRepository,
         IUnitOfWork unitOfWork,
-        IPublisher publisher,
-        ApplicationDbContext context)
+        IPublisher publisher
+        )
     {
         _productRepository = productRepository;
         _unitOfWork = unitOfWork;
-        _context = context;
         _publisher = publisher;
     }
 
@@ -31,8 +28,8 @@ public sealed class CreateProductCommandHandler : ICommandHandler<Command.Create
 
         _productRepository.Add(product);
 
-        _unitOfWork.SaveChangesAsync();
-
+       await  _unitOfWork.SaveChangesAsync();
+        await _publisher.Publish(new DomainEvent.ProductCreated(Guid.NewGuid()));
         return Result.Success();
     }
 }

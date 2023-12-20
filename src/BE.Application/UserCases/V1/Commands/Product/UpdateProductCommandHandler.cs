@@ -3,7 +3,6 @@ using BE.Contract.Abstractions.Shared;
 using BE.Domain.Abstractions.Repositories;
 using BE.Domain.Abstractions;
 using BE.Domain.Exceptions;
-using BE.Persistance;
 using BE.Contract.Services.Product;
 
 namespace BE.Application.UserCases.V1.Commands.Product;
@@ -11,15 +10,14 @@ public sealed class UpdateProductCommandHandler : ICommandHandler<Command.Update
 {
     private readonly IRepositoryBase<Domain.Entities.Product, Guid> _productRepository;
     private readonly IUnitOfWork _unitOfWork; // SQL-SERVER-STRATEGY-2
-    private readonly ApplicationDbContext _context; // SQL-SERVER-STRATEGY-1
+    
 
     public UpdateProductCommandHandler(IRepositoryBase<Domain.Entities.Product, Guid> productRepository,
-        IUnitOfWork unitOfWork,
-        ApplicationDbContext context)
+        IUnitOfWork unitOfWork)
     {
         _productRepository = productRepository;
         _unitOfWork = unitOfWork;
-        _context = context;
+        
     }
     public async Task<Result> Handle(Command.UpdateProductCommand request, CancellationToken cancellationToken)
     {
